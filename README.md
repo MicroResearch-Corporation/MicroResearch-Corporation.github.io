@@ -1,6 +1,6 @@
 # **<span style="color: #2c3e50;">MicroResearch Corporation</span>**
 ## **<span style="color: #3498db;">Innovating Tomorrow's Solutions, Today</span>**
-![MicroResearch Logo](https://your-logo-url.com/logo.png)
+![MicroResearch Logo](https://avatars.githubusercontent.com/u/249983472?v=4)
 
 * **Founded:** 2006  
 * **Founder & President:** M Ramzan Ch  
@@ -60,7 +60,7 @@ Ready to transform your digital journey? <a href="mailto:contact@microresearch.c
 </p>
 
 *📍 Pakistan | 🌐 [www.microresearch.com](https://www.microresearch.com)*  
-*Follow us: [LinkedIn](https://linkedin.com/company/microresearch) | [Twitter](https://twitter.com/microresearch)*
+*Follow us: [LinkedIn](https://linkedin.com/company/microresearch)*
 
 ---
 
