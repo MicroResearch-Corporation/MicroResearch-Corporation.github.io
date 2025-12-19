@@ -51,7 +51,7 @@ jobs:
       - name: Decide release
         id: decide
         run: |
-          DATE=$(date -u +'%Y.%m.%d')
+          DATE=$(date -u +'%Y.%h.%d')
           echo "DATE=$DATE" >> $GITHUB_ENV
 
           if [ -z "${{ steps.latest.outputs.published_at }}" ]; then
