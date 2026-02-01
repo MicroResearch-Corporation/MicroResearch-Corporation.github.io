@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroResearch Corporation | Innovating Tomorrow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <style>
+        :root {
+            --mrc-red: #f44336;
+            --mrc-dark: #0a0a0a
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--mrc-dark);
+            color: white;
+            overflow-x: hidden
+        }
+
+        .text-mrc {
+            color: var(--mrc-red)
+        }
+
+        .bg-mrc {
+            background-color: var(--mrc-red)
+        }
+
+        .border-mrc {
+            border-color: var(--mrc-red)
+        }
+
+        html.lenis {
+            height: auto
+        }
+
+        .lenis-smooth {
+            scroll-behavior: auto !important
+        }
+
+        .glass-panel {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05)
+        }
+
+        .tech-grid {
+            background-image: radial-gradient(rgba(244, 67, 54, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px
+        }
+
+        .mrc-button {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            border: 1px solid var(--mrc-red);
+            padding: 12px 30px;
+            border-radius: 4px
+        }
+
+        .mrc-button:hover {
+            background: var(--mrc-red);
+            box-shadow: 0 0 25px rgba(244, 67, 54, 0.4)
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--mrc-red)
+        }
+
+        .reveal-text {
+            opacity: 0;
+            transform: translateY(30px)
+        }
+
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.9)
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0)
+            }
+
+            100% {
+                transform: translateX(-50%)
+            }
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            display: flex
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: scroll 30s linear infinite
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed inset-0 tech-grid pointer-events-none z-0"></div>
+    <div
+        class="fixed top-6 left-6 right-6 z-[100] flex justify-between items-center px-6 py-4 glass-panel rounded-full">
+        <div class="flex items-center gap-3"><img src="https://avatars.githubusercontent.com/u/249983472"
+                class="w-8 h-8 rounded-lg shadow-lg shadow-red-500/20" alt="Logo"><span
+                class="font-black tracking-tighter text-lg uppercase">MicroResearch <span
+                    class="text-mrc">Corporation</span></span></div>
+        <nav class="hidden lg:flex items-center gap-8 text-[10px] font-bold tracking-[0.2em] uppercase text-slate-400">
+            <a href="#expertise" class="nav-link hover:text-mrc transition">Expertise</a><a href="#workflow"
+                class="nav-link hover:text-mrc transition">Workflow</a><a href="#open-source"
+                class="nav-link hover:text-mrc transition">Open Source</a><span
+                class="border-l border-white/10 h-4"></span><span class="flex items-center gap-2"><span
+                    class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>Systems Active</span>
+        </nav>
+        <div class="text-[10px] font-bold tracking-[0.2em] uppercase text-slate-400 md:block hidden">Founder: M Ramzan
+            Ch </div>
+    </div>
+    <section class="relative min-h-screen flex items-center justify-center pt-24">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center z-10">
+            <div class="hero-content">
+                <div
+                    class="inline-block px-3 py-1 bg-mrc/10 border border-mrc/20 rounded-md text-mrc text-[10px] font-bold tracking-widest uppercase mb-6">
+                    Innovating Tomorrow's Solutions, Today </div>
+                <h1 class="text-7xl lg:text-[100px] font-black leading-[0.9] tracking-tighter mb-8">FUTURE <br><span
+                        class="text-mrc underline decoration-1 underline-offset-8">ENGINEERED.</span></h1>
+                <p class="text-slate-400 text-lg max-w-lg mb-12 leading-relaxed">A specialized technology powerhouse led
+                    by <span class="text-white font-bold">M Ramzan Ch</span>. We engineer high-performance PWAs,
+                    enterprise software, and open-source contributions for the next generation of digital commerce. </p>
+                <div class="flex gap-4"><button
+                        class="mrc-button font-bold text-xs uppercase tracking-widest bg-mrc">Initiate
+                        Collaboration</button><button
+                        class="mrc-button font-bold text-xs uppercase tracking-widest hover:text-white">The FOSS
+                        Lab</button></div>
+            </div>
+            <div class="relative hidden lg:block">
+                <div class="absolute inset-0 bg-mrc/20 blur-[120px] rounded-full"></div><img
+                    src="https://avatars.githubusercontent.com/u/249983472"
+                    class="w-[450px] h-[450px] rounded-[60px] relative z-10 border border-white/10 transform rotate-3 shadow-2xl floating-img"
+                    alt="Branding">
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-mrc animate-bounce"><i
+                data-lucide="chevrons-down"></i></div>
+    </section>
+    <div class="py-10 border-y border-white/5 bg-zinc-950 overflow-hidden">
+        <div class="marquee-container">
+            <div class="marquee-content gap-20 items-center px-10"><span
+                    class="text-2xl font-black text-slate-700 uppercase tracking-tighter">Progressive Web
+                    Apps</span><span class="text-2xl font-black text-mrc uppercase tracking-tighter">Kotlin
+                    Native</span><span class="text-2xl font-black text-slate-700 uppercase tracking-tighter">Enterprise
+                    E-Commerce</span><span class="text-2xl font-black text-mrc uppercase tracking-tighter">FOSS
+                    Ecosystem</span><span class="text-2xl font-black text-slate-700 uppercase tracking-tighter">Agile
+                    Architecture</span><span class="text-2xl font-black text-mrc uppercase tracking-tighter">Node.js
+                    Engine</span><span class="text-2xl font-black text-slate-700 uppercase tracking-tighter">Progressive
+                    Web Apps</span><span class="text-2xl font-black text-mrc uppercase tracking-tighter">Kotlin
+                    Native</span><span class="text-2xl font-black text-slate-700 uppercase tracking-tighter">Enterprise
+                    E-Commerce</span><span class="text-2xl font-black text-mrc uppercase tracking-tighter">FOSS
+                    Ecosystem</span></div>
+        </div>
+    </div>
+    <section class="relative min-h-screen flex items-center bg-zinc-950/50">
+        <div class="max-w-7xl mx-auto px-6 py-24">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="reveal-scale">
+                    <div class="relative p-2 glass-panel rounded-[40px] inline-block"><img
+                            src="https://avatars.githubusercontent.com/u/249983472"
+                            class="w-80 h-80 rounded-[35px] grayscale hover:grayscale-0 transition-all duration-700"
+                            alt="Founder"></div>
+                </div>
+                <div class="space-y-8">
+                    <h2 class="text-4xl lg:text-6xl font-bold reveal-text">Visionary Leadership</h2>
+                    <p class="text-xl text-slate-300 reveal-text">Led by <span class="text-mrc font-bold">M Ramzan
+                            Ch</span>, our team combines creativity with technical expertise to foster growth and
+                        community innovation.</p>
+                    <div class="grid grid-cols-2 gap-6 reveal-text">
+                        <div class="p-6 glass-panel rounded-xl">
+                            <h4 class="text-mrc font-bold text-3xl mb-1">Agile</h4>
+                            <p class="text-[10px] text-slate-500 uppercase tracking-widest">Approach for fast delivery &
+                                iterations</p>
+                        </div>
+                        <div class="p-6 glass-panel rounded-xl">
+                            <h4 class="text-mrc font-bold text-3xl mb-1">Tailored</h4>
+                            <p class="text-[10px] text-slate-500 uppercase tracking-widest">Solutions unique to your
+                                business needs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="workflow" class="py-32 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-5xl font-black uppercase tracking-tighter mb-4">The <span
+                            class="text-mrc">Workflow.</span></h2>
+                    <p class="text-slate-400">Our systematic approach to turning complex problems into scalable digital
+                        infrastructure.</p>
+                </div>
+                <div class="text-mrc font-mono text-sm tracking-widest">PHASE: 01 — 04</div>
+            </div>
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="p-8 border border-white/5 hover:border-mrc/50 transition-all bg-zinc-900/30 group">
+                    <div class="text-4xl font-black text-white/10 group-hover:text-mrc/20 mb-6 transition-colors">01
+                    </div>
+                    <h4 class="font-bold mb-3 uppercase tracking-widest text-sm">Discovery & Audit</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Deep analysis of current technical debt and
+                        infrastructure requirements.</p>
+                </div>
+                <div class="p-8 border border-white/5 hover:border-mrc/50 transition-all bg-zinc-900/30 group">
+                    <div class="text-4xl font-black text-white/10 group-hover:text-mrc/20 mb-6 transition-colors">02
+                    </div>
+                    <h4 class="font-bold mb-3 uppercase tracking-widest text-sm">Architecture</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Designing decoupled, scalable systems using modern
+                        FOSS principles.</p>
+                </div>
+                <div class="p-8 border border-white/5 hover:border-mrc/50 transition-all bg-zinc-900/30 group">
+                    <div class="text-4xl font-black text-white/10 group-hover:text-mrc/20 mb-6 transition-colors">03
+                    </div>
+                    <h4 class="font-bold mb-3 uppercase tracking-widest text-sm">Development</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">High-velocity engineering with continuous
+                        integration and testing.</p>
+                </div>
+                <div class="p-8 border border-white/5 hover:border-mrc/50 transition-all bg-zinc-900/30 group">
+                    <div class="text-4xl font-black text-white/10 group-hover:text-mrc/20 mb-6 transition-colors">04
+                    </div>
+                    <h4 class="font-bold mb-3 uppercase tracking-widest text-sm">Deployment</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Seamless go-live with 24/7 monitoring and
+                        performance optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="expertise" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-24">
+                <h2 class="text-5xl lg:text-7xl font-black mb-6 reveal-text uppercase">The <span
+                        class="text-mrc">Arsenal.</span></h2>
+                <div class="w-20 h-1 bg-mrc mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-10 glass-panel rounded-[2rem] hover:border-mrc/50 transition-all group reveal-scale"><i
+                        data-lucide="zap" class="text-mrc w-12 h-12 mb-8 group-hover:scale-110 transition"></i>
+                    <h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter">PWA FOSS</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Performance-driven Progressive Web Apps for
+                        offline-first experiences, ensuring your business stays active even in zero connectivity.</p>
+                    <div class="flex gap-2"><span class="text-[9px] border border-white/10 px-2 py-1 rounded">Service
+                            Workers</span><span class="text-[9px] border border-white/10 px-2 py-1 rounded">Push
+                            API</span></div>
+                </div>
+                <div class="p-10 bg-mrc/5 border-mrc rounded-[2rem] border transition-all group reveal-scale"><i
+                        data-lucide="code" class="text-mrc w-12 h-12 mb-8 group-hover:scale-110 transition"></i>
+                    <h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter">Custom Software</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">Engineered scalability with secure payment
+                        integrations. We build the engines that power modern e-commerce platforms.</p>
+                    <div class="flex gap-2"><span
+                            class="text-[9px] border border-mrc/20 px-2 py-1 rounded bg-mrc/10">Architecture</span><span
+                            class="text-[9px] border border-mrc/20 px-2 py-1 rounded bg-mrc/10">Security</span></div>
+                </div>
+                <div class="p-10 glass-panel rounded-[2rem] hover:border-mrc/50 transition-all group reveal-scale"><i
+                        data-lucide="smartphone" class="text-mrc w-12 h-12 mb-8 group-hover:scale-110 transition"></i>
+                    <h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter">Android Apps</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Native Android experiences optimized for
+                        business performance, accessibility, and high user engagement metrics.</p>
+                    <div class="flex gap-2"><span
+                            class="text-[9px] border border-white/10 px-2 py-1 rounded">Kotlin</span><span
+                            class="text-[9px] border border-white/10 px-2 py-1 rounded">UX Focused</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="open-source" class="py-32 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-5xl font-black mb-8 uppercase leading-tight">Empowering the <br><span
+                            class="text-mrc">Open Community.</span></h2>
+                    <p class="text-slate-400 mb-8 leading-relaxed">We believe in giving back. MicroResearch Corporation
+                        actively maintains several open-source repositories that provide the foundation for modern web
+                        reliability.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 glass-panel rounded-lg"><i data-lucide="github"
+                                class="text-mrc mt-1"></i>
+                            <div>
+                                <h5 class="font-bold text-sm">Core Architecture Libs</h5>
+                                <p class="text-[10px] text-slate-500">Reusable logic for high-performance commerce
+                                    engines.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 glass-panel rounded-lg"><i data-lucide="git-branch"
+                                class="text-mrc mt-1"></i>
+                            <div>
+                                <h5 class="font-bold text-sm">PWA Seed Projects</h5>
+                                <p class="text-[10px] text-slate-500">Kickstarter templates for offline-ready
+                                    applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-6 border-l-4 border-mrc bg-white/5 rounded-r-xl">
+                        <div class="flex justify-between items-center mb-4"><span
+                                class="text-[10px] font-bold tracking-widest text-mrc uppercase">Active
+                                Project</span><span class="text-[10px] text-slate-500">v2.4.0</span></div>
+                        <h4 class="text-xl font-bold mb-2">Micro-PWA Core</h4>
+                        <p class="text-xs text-slate-400">Next-gen service worker wrapper for heavy asset caching in
+                            retail environments.</p>
+                    </div>
+                    <div class="p-6 border-l-4 border-slate-700 bg-white/5 rounded-r-xl opacity-60">
+                        <div class="flex justify-between items-center mb-4"><span
+                                class="text-[10px] font-bold tracking-widest text-slate-500 uppercase">Beta
+                                Testing</span><span class="text-[10px] text-slate-500">v0.8.0</span></div>
+                        <h4 class="text-xl font-bold mb-2">Kotlin-JS-Connect</h4>
+                        <p class="text-xs text-slate-400">Bridge library for seamless Android and Web data
+                            synchronization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-32 bg-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-4 gap-12 text-center">
+                <div class="reveal-text">
+                    <div class="text-6xl font-black text-mrc mb-2">3X</div>
+                    <div class="text-[10px] tracking-[0.3em] font-bold text-slate-500 uppercase">Growth Potential</div>
+                </div>
+                <div class="reveal-text">
+                    <div class="text-6xl font-black text-white mb-2 underline decoration-mrc">FOSS</div>
+                    <div class="text-[10px] tracking-[0.3em] font-bold text-slate-500 uppercase">Open-Source Soul</div>
+                </div>
+                <div class="reveal-text">
+                    <div class="text-6xl font-black text-mrc mb-2">99.9%</div>
+                    <div class="text-[10px] tracking-[0.3em] font-bold text-slate-500 uppercase">Runtime Security</div>
+                </div>
+                <div class="reveal-text">
+                    <div class="text-6xl font-black text-white mb-2 underline decoration-mrc">24/7</div>
+                    <div class="text-[10px] tracking-[0.3em] font-bold text-slate-500 uppercase">Agile Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="min-h-screen flex items-center justify-center relative">
+        <div class="max-w-4xl mx-auto px-6 text-center z-10">
+            <h2 class="text-5xl lg:text-8xl font-black mb-12 reveal-text">LET'S <br><span
+                    class="text-mrc">INNOVATE.</span></h2>
+            <p class="text-slate-400 mb-12 text-xl reveal-text">Ready to transform your digital journey? Join the
+                MicroResearch ecosystem today.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-8 reveal-scale"><a
+                    href="mailto:tellus@mrc.io"
+                    class="mrc-button bg-mrc text-white font-bold flex items-center justify-center gap-3"><i
+                        data-lucide="mail" class="w-4 h-4"></i>CONNECT@MICRORESEARCH </a><a
+                    href="https://github.com/microresearch-corporation"
+                    class="mrc-button text-white font-bold flex items-center justify-center gap-3"><i
+                        data-lucide="github" class="w-4 h-4 text-mrc"></i>EXPLORE REPOSITORIES </a></div>
+            <div
+                class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] text-slate-600 tracking-widest font-bold">
+                <p>© 2025 MicroResearch Corporation / M RAMZAN CH</p>
+                <div class="flex gap-10 mt-6 md:mt-0"><a href="https://microresearch-corporation.github.io/"
+                        class="hover:text-mrc transition">SYSTEM STATUS: LIVE</a><a href="./Privacy/index.html/"
+                        class="hover:text-mrc transition">PRIVACY_PROTOCOL</a></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const lenis = new Lenis(); function raf(time) { lenis.raf(time); requestAnimationFrame(raf) } requestAnimationFrame(raf); lucide.createIcons(); gsap.registerPlugin(ScrollTrigger); document.querySelectorAll('.reveal-text').forEach((el) => { gsap.to(el, { scrollTrigger: { trigger: el, start: "top 90%", toggleActions: "play none none reverse" }, opacity: 1, y: 0, duration: 1.2, ease: "expo.out" }) }); document.querySelectorAll('.reveal-scale').forEach((el) => { gsap.to(el, { scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" }, opacity: 1, scale: 1, duration: 1.5, ease: "power4.out" }) }); gsap.to(".floating-img", { y: 30, x: 10, duration: 3, repeat: -1, yoyo: true, ease: "sine.inOut" }); gsap.to(".tech-grid", { y: -200, scrollTrigger: { trigger: "body", start: "top top", end: "bottom bottom", scrub: true } });
+        document.addEventListener("DOMContentLoaded", () => { document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener("click", function (e) { e.preventDefault(); const targetId = this.getAttribute("href").slice(1); const targetElement = document.getElementById(targetId); if (targetElement) { lenis.scrollTo(targetElement, { offset: -100, duration: 1.5, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) }) } }) }) }); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Protocol | MicroResearch Corporation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { 
+            font-family: 'Outfit', sans-serif; 
+            background-color: #050505; 
+            color: #cbd5e1; 
+            line-height: 1.6;
+        }
+        .text-mrc { color: #f44336; }
+        .bg-mrc { background-color: #f44336; }
+        .border-mrc { border-color: #f44336; }
+        .content-card { 
+            background: rgba(255, 255, 255, 0.02); 
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+        }
+        h2, h3 { color: #ffffff; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
+        p { margin-bottom: 1.25rem; }
+        ul { list-style-type: none; padding-left: 0; }
+        li { margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 10px; }
+        li::before { content: "•"; color: #f44336; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <!-- Simple Static Header -->
+    <nav class="border-b border-white/5 bg-black/50 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="https://avatars.githubusercontent.com/u/249983472" class="w-8 h-8 rounded-lg" alt="Logo">
+                <span class="font-extrabold tracking-tighter text-white uppercase">MicroResearch <span class="text-mrc">Corp</span></span>
+            </a>
+            <a href="index.html" class="text-xs font-bold uppercase tracking-widest hover:text-mrc transition flex items-center gap-2">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Hub
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-16">
+        <header class="mb-12 border-l-4 border-mrc pl-6">
+            <h1 class="text-4xl md:text-5xl font-black text-white mb-2 uppercase tracking-tight">Privacy Protocol</h1>
+            <p class="text-mrc font-bold tracking-widest text-sm uppercase">Effective Date: October 2024</p>
+        </header>
+
+        <div class="content-card p-8 md:p-12 rounded-3xl">
+            
+            <section>
+                <h2>1. Introduction</h2>
+                <p>Welcome to MicroResearch Corporation. We are committed to protecting your personal information and your right to privacy. This Protocol outlines our practices regarding the data we collect when you interact with our Progressive Web Apps (PWAs), open-source contributions, and custom software solutions.</p>
+            </section>
+
+            <section>
+                <h2>2. Data Collection</h2>
+                <p>As a technology-first organization led by M Ramzan Ch, we prioritize data minimization. We collect information only necessary for:</p>
+                <ul>
+                    <li>Performance optimization of PWA offline-first experiences.</li>
+                    <li>Tailoring custom software to unique organizational needs.</li>
+                    <li>Fostering secure community collaboration in FOSS projects.</li>
+                    <li>Analyzing Tech Innovation Pulses to improve our service delivery.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Progressive Web App (PWA) Security</h2>
+                <p>Our PWAs utilize Service Workers and local caching. While this stores data on your device for offline use, MicroResearch Corporation does not gain unauthorized access to your local file system. All synchronized data is encrypted using industry-standard protocols before being transmitted to our secure cloud architectures.</p>
+            </section>
+
+            <section>
+                <h2>4. Open Source & GitHub</h2>
+                <p>When you interact with our repositories on GitHub, your data is subject to GitHub's privacy policy. Contributions to our FOSS (Free and Open Source Software) projects are public by nature. By contributing, you acknowledge that your GitHub profile and code commits are visible to the global developer community.</p>
+            </section>
+
+            <section>
+                <h2>5. Data Protection Rights</h2>
+                <p>Under our global standard of operation, you have the right to:</p>
+                <ul>
+                    <li>Request access to the personal data we hold about you.</li>
+                    <li>Request the deletion of your data from our custom e-commerce or software platforms.</li>
+                    <li>Object to the processing of your data for research purposes.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Third-Party Integrations</h2>
+                <p>Our custom software solutions may include secure payment integrations or third-party APIs. These providers have their own privacy policies, and we recommend reviewing them. We only partner with world-class providers that meet our strict "Innovation Pulse" security standards.</p>
+            </section>
+
+            <section class="mt-12 pt-12 border-t border-white/5">
+                <h2>7. Contact Governance</h2>
+                <p>If you have questions about this Protocol or how MicroResearch Corporation handles your data, please contact our administrative lead:</p>
+                <div class="bg-white/5 p-6 rounded-xl border border-white/10 mt-4">
+                    <p class="mb-1 font-bold text-white">M Ramzan Ch</p>
+                    <p class="mb-4 text-sm text-slate-500">Founder & CEO, MicroResearch Corporation</p>
+                    <a href="mailto:info@microresearch-corp.io" class="text-mrc font-bold hover:underline">info@microresearch-corp.io</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-16 text-center text-xs font-bold tracking-widest text-slate-600 uppercase">
+            <p>© 2024 MicroResearch Corporation / All Systems Secure</p>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
