@@ -1,6 +1,6 @@
-# **<span style="color: #2c3e50;">MicroResearch Corporation</span>**
-## **<span style="color: #3498db;">Innovating Tomorrow's Solutions, Today</span>**
-![MicroResearch Logo](https://avatars.githubusercontent.com/u/249983472?v=4)
+# **<span style="color: #f44234;">MainRoute</span> Core**
+## **<span style="color: #f87d7d;">Innovating Tomorrow's Solutions, Today</span>**
+![MainRoute Core Logo](https://avatars.githubusercontent.com/u/249983472?v=4)
 
 * **Founded:** 2006  
 * **Founder & President:** M Ramzan Ch  
@@ -9,14 +9,15 @@
 * **Focus:** Cutting-edge **Web**, **PWA**, **Software**, and **Open Source** solutions.
 
 <div align="center">
-  <a href="https:                                                                                                                                                          
   <a href="https://gist.blog/pwa"><img src="https://img.shields.io/badge/PWA-Progessive%20Web%20Apps-FF4081?style=for-the-badge&logo=pwa" alt="PWA"></a>
-  <a href="https:                                                                                                                                                      
+
+
+
   <a href="https://gist.blog/open-source"><img src="https://img.shields.io/badge/FOSS-Open%20Source-FF6F00?style=for-the-badge&logo=open-source-initiative" alt="FOSS"></a>
 </div>
 
 <p style="font-size: 1.2em; line-height: 1.6em; color:           
-MicroResearch Corporation is a pioneering tech firm driving innovation through <strong>progressive web apps (PWAs)</strong>, robust software, and open-source solutions. We empower businesses, developers, and organizations to thrive in the digital era with scalable, impactful technology. Based in Pakistan, we blend global standards with local expertise.
+MainRoute Core is a pioneering tech firm driving innovation through <strong>progressive web apps (PWAs)</strong>, robust software, and open-source solutions. We empower businesses, developers, and organizations to thrive in the digital era with scalable, impactful technology. Based in Pakistan, we blend global standards with local expertise.
 </p>
 
                                                           
@@ -56,12 +57,8 @@ We’ve partnered with startups and organizations to:
 
 ### **<span style="color: #1abc9c;">Get In Touch</span>**
 <p style="font-size: 1.2em; text-align: center; margin-top: 20px;">
-Ready to transform your digital journey? <a href="mailto:contact@microresearch.com" style="color: #3498db; text-decoration: none;">Get in touch</a> or explore our projects on <a href="https://github.com/MicroResearchCorp" style="color: #3498db; text-decoration: none;">GitHub</a>. Let’s innovate together!
+Ready to transform your digital journey? <a href="mailto:tellus@mrc.com" style="color: #3498db; text-decoration: none;">Get in touch</a> or explore our projects on <a href="https://github.com/MianRoute-Core" style="color: #3498db; text-decoration: none;">GitHub</a>. Let’s innovate together!
 </p>
 
-*📍 Pakistan | 🌐 [www.microresearch.com](https://www.microresearch.com)*  
-*Follow us: [LinkedIn](https://linkedin.com/company/microresearch)*
+*📍 Pakistan | 🌐 [MainRoute Core](https://www.mainroute-core.github.io)*  
 
----
-
-*Note: Replace placeholders (`your-logo-url.com`, `your-graph-url.com`, etc.) with actual URLs/images. Want adjustments or more content? 😊*
